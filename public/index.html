@@ -9,32 +9,31 @@
 <body>
   <h1>Firebase Tuto App</h1>
 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+    import { } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js";
+    import { } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
 
-<script>
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "firebase/app";
-  import { getAnalytics } from "firebase/analytics";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-  import { } from 'firebase/auth';
-  import { } from 'firebase/firestore';
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD5tToFcRjCTWvKnD0uIbk-3N1e3xScEas",
+      authDomain: "tuto-53a9b.firebaseapp.com",
+      projectId: "tuto-53a9b",
+      storageBucket: "tuto-53a9b.appspot.com",
+      messagingSenderId: "348864816393",
+      appId: "1:348864816393:web:14eb80c7e80f51970b9fd8",
+      measurementId: "G-S4KY21PMWE"
+    };
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyD5tToFcRjCTWvKnD0uIbk-3N1e3xScEas",
-    authDomain: "tuto-53a9b.firebaseapp.com",
-    projectId: "tuto-53a9b",
-    storageBucket: "tuto-53a9b.appspot.com",
-    messagingSenderId: "348864816393",
-    appId: "1:348864816393:web:14eb80c7e80f51970b9fd8",
-    measurementId: "G-S4KY21PMWE"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
   <script src="app.js" defer></script>
 
